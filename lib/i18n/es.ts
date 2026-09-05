@@ -39,7 +39,7 @@ export const es = {
     qr: {
       title: "QR Code Studio",
       tagline: "Códigos QR que la gente de verdad escanea.",
-      body: "Una app de Luminar que construí para que un restaurante, un negocio, cualquiera pueda poner un QR en una mesa y después cambiar a dónde va. Menús, enlaces, archivos. Cuenta los escaneos. La gente lo usa.",
+      body: "Una app de Luminar que construí con alguien más para que un restaurante, un negocio, cualquiera pueda poner un QR en una mesa y después cambiar a dónde va. Menús, enlaces, archivos. Cuenta los escaneos. La gente lo usa.",
       roleLabel: "En qué trabajo",
       role: "El producto entero: crear los códigos, los menús, el tracking, lo que se abre cuando escaneas.",
       cta: "Abrir QR Code Studio",
@@ -57,7 +57,7 @@ export const es = {
     title: "Eso soy yo",
     p1: "Soy ingeniero de software y vivo en Cabo Rojo. Papá de dos, con una esposa hermosa. Eso es lo importante.",
     p2: "En RepeatMD trato de aportar el mayor valor que pueda: que el producto crezca, y que los pacientes y todos los que usan la app la pasen bien.",
-    p3: "También trabajo en Liding, tratando de que el fantasy de baloncesto se sienta bien para Puerto Rico, y construí QR Code Studio, una app de Luminar que la gente de verdad usa. Eso soy yo, por ahora.",
+    p3: "También trabajo en Liding, tratando de que el fantasy de baloncesto se sienta bien para Puerto Rico, y construí QR Code Studio con alguien más, una app de Luminar que la gente de verdad usa. Eso soy yo, por ahora.",
   },
   contact: {
     kicker: "Contacto",

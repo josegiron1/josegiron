@@ -37,7 +37,7 @@ export const en = {
     qr: {
       title: "QR Code Studio",
       tagline: "QR codes people actually scan.",
-      body: "A Luminar app I built so a restaurant, a shop, anyone can put a QR on a table and still change where it goes later. Menus, links, files. It tracks scans. People use it.",
+      body: "A Luminar app I built with someone else so a restaurant, a shop, anyone can put a QR on a table and still change where it goes later. Menus, links, files. It tracks scans. People use it.",
       roleLabel: "What I work on",
       role: "The product itself: making the codes, the menus, the tracking, the thing that opens when you scan.",
       cta: "Open QR Code Studio",
@@ -55,7 +55,7 @@ export const en = {
     title: "That's me",
     p1: "I’m a software engineer living in Cabo Rojo. Father of two, with a beautiful wife. That’s the important part.",
     p2: "At RepeatMD I try to bring the most value I can: help the product grow, and make sure patients and everyone using the app have a good experience.",
-    p3: "I also work on Liding, trying to make fantasy basketball feel right for Puerto Rico, and I built QR Code Studio, a Luminar app people actually use. That’s me for now.",
+    p3: "I also work on Liding, trying to make fantasy basketball feel right for Puerto Rico, and I built QR Code Studio with someone else, a Luminar app people actually use. That’s me for now.",
   },
   contact: {
     kicker: "Contact",
