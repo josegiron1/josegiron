@@ -1,0 +1,273 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: Verdana, Arial, Helvetica, sans-serif;
+  --font-mono: Verdana, Arial, Helvetica, sans-serif;
+  --font-heading: Verdana, Arial, Helvetica, sans-serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-link: var(--link);
+  --color-link-visited: var(--link-visited);
+  --color-orangered: var(--orangered);
+  --color-header: var(--header);
+  --color-tab: var(--tab);
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-2xl: 0;
+  --radius-3xl: 0;
+  --radius-4xl: 0;
+}
+
+:root {
+  --background: #eeeeee;
+  --foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --popover: #ffffff;
+  --popover-foreground: #000000;
+  --primary: #5f99cf;
+  --primary-foreground: #ffffff;
+  --secondary: #cee3f8;
+  --secondary-foreground: #000000;
+  --muted: #f0f0f0;
+  --muted-foreground: #555555;
+  --accent: #eff7ff;
+  --accent-foreground: #000000;
+  --destructive: #ff4500;
+  --border: #5f99cf;
+  --input: #c0c0c0;
+  --ring: #5f99cf;
+  --link: #369;
+  --link-visited: #551a8b;
+  --orangered: #ff4500;
+  --header: #cee3f8;
+  --tab: #eff7ff;
+  --chart-1: #c6c6c6;
+  --chart-2: #888888;
+  --chart-3: #5f99cf;
+  --chart-4: #ff4500;
+  --chart-5: #369;
+  --radius: 0;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #000000;
+  --sidebar-primary: #5f99cf;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #eff7ff;
+  --sidebar-accent-foreground: #000000;
+  --sidebar-border: #c4dbf1;
+  --sidebar-ring: #5f99cf;
+}
+
+@layer base {
+  html {
+    @apply font-sans;
+    color-scheme: light;
+    touch-action: manipulation;
+    scroll-padding-top: 1rem;
+    font-size: 13px;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+
+  a {
+    color: var(--link);
+  }
+
+  a:visited {
+    color: var(--link-visited);
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .sr-strip {
+    background: #f0f0f0;
+    border-bottom: 1px solid #c0c0c0;
+    color: #000;
+    font-size: 11px;
+    line-height: 18px;
+    padding: 2px 8px;
+  }
+
+  .old-header {
+    background: var(--header);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .old-logo {
+    color: var(--orangered);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 40px;
+    text-decoration: none;
+  }
+
+  .old-logo:visited {
+    color: var(--orangered);
+  }
+
+  .old-logo:hover {
+    text-decoration: none;
+  }
+
+  .tabmenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0 0 0 4px;
+  }
+
+  .tabmenu a {
+    background: var(--tab);
+    border: 1px solid var(--border);
+    border-bottom: none;
+    color: #369;
+    display: inline-block;
+    font-weight: bold;
+    min-height: 28px;
+    padding: 4px 8px 2px;
+    text-decoration: none;
+  }
+
+  .tabmenu a:visited {
+    color: #369;
+  }
+
+  .tabmenu a:hover {
+    text-decoration: underline;
+  }
+
+  .tabmenu a[aria-current="true"] {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    color: var(--orangered);
+    margin-bottom: -1px;
+  }
+
+  .vote-up,
+  .vote-down {
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
+  .vote-up {
+    border-bottom: 8px solid #c6c6c6;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+  }
+
+  .vote-down {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 8px solid #c6c6c6;
+    margin-top: 4px;
+  }
+
+  .side-box {
+    background: #fff;
+    border: 1px solid #c4dbf1;
+    font-size: 12px;
+    margin: 0 0 12px;
+    padding: 8px;
+  }
+
+  .reddit-btn {
+    background: #5f99cf;
+    border: 1px solid #4f8ec7;
+    color: #fff;
+    display: inline-block;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .reddit-btn:visited,
+  .reddit-btn:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .reddit-btn:hover {
+    background: #4f8ec7;
+  }
+
+  .title-link {
+    color: #0000ff;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  .title-link:visited {
+    color: #551a8b;
+  }
+
+  .title-link:hover {
+    text-decoration: underline;
+  }
+
+  .domain {
+    color: #888;
+    font-size: 10px;
+  }
+
+  .tagline {
+    color: #555;
+    font-size: 11px;
+  }
+}
